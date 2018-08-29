@@ -251,9 +251,10 @@ func TestMakeLabel(t *testing.T) {
 		label4name: value5,
 	}
 	wantLabels2 := map[string]string{
+		// default value for key1 is suppressed, and value defined in tag of view2row1 is
+		// used.
 		label1name: value1,
 		label2name: value2,
-		// value for key4 in view2row1 is suppressed
 		label4name: value5,
 	}
 	tsArr := cl.reqs[0].TimeSeries
