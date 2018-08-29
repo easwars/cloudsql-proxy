@@ -120,7 +120,7 @@ func (e *errStorage) onError(err error, rds ...*RowData) {
 	e.errRds = append(e.errRds, errRowData{err, rds})
 }
 
-// errRowDataCheck contains TODO
+// errRowDataCheck contains data for checking content of error storage.
 type errRowDataCheck struct {
 	errPrefix, errSuffix string
 	rds                  []*RowData
